@@ -11,6 +11,7 @@ const generateToken = (user = {}) =>{
         {
           id: user.id,
           name: user.name,
+          typeAccount: user.typeAccount
         },
         authConfig.secret,
         {
