@@ -3,6 +3,7 @@ const cors = require('cors')
 
 const AuthController = require('./controller/AuthController')
 const ColaboratorController = require('./controller/ColaboratorController')
+const ClienteController = require('./controller/ClientController')
 
 const autheticateMiddleware = require('./middlewares/autheticate')
 
@@ -12,7 +13,7 @@ app.use(cors())
 app.use(express.json());
 app.use("/auth", AuthController)
 app.use("/colaborator", autheticateMiddleware ,ColaboratorController)
-
+app.use("/client", autheticateMiddleware ,ClienteController)
 
 const PORT = 3000;
 

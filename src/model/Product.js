@@ -5,12 +5,20 @@ const ProductSchema = new mongoose.Schema({
     userId: {
         type: ObjectId,
     },
+    productType: {
+        type: String,
+        required: true,
+    },
     productName: {
         type: String,
         required: true,
     },
     productPrice: {
         type: Number,
+        required: true,
+    },
+    productDescription: {
+        type: String,
         required: true,
     },
     productImage: {
