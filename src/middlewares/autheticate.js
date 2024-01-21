@@ -30,10 +30,7 @@ module.exports = (req, res, next) => {
         error: true,
         message: "Token invalide/expired",
       });
-
     req.userLogged = decoded;
-
-    console.log(decoded, "decoded");
     next();
   });
 };
