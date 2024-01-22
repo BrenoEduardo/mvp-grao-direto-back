@@ -30,6 +30,18 @@ const loginSchema = new mongoose.Schema({
             return this.typeAccount === 'colaborator';
         }
     },
+    phoneCompany: {
+        type: String,
+        required: function() {
+            return this.typeAccount === 'colaborator';
+        }
+    },
+    adressCompany: {
+        type: String,
+        required: function() {
+            return this.typeAccount === 'colaborator';
+        }
+    },
     logoCompany: {
         type: String,
         required: function() {
