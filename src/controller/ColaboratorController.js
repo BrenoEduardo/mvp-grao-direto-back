@@ -40,4 +40,18 @@ router.get("/getProductsBy/:id", async (req, res) => {
   });
 });
 
+router.delete("/deleteProduct/:id", async (req, res) => {
+  const _id = req.params.id;
+  if (!_id) {
+    return res.status(400).json({
+      error: true,
+      message: "idNotFound",
+    });
+  }
+  await ProductModel.deleteOne({ _id });
+  return res.json({
+    error: false,
+    data: 'Product delete with sucess',
+  });
+});
 module.exports = router;
