@@ -44,9 +44,6 @@ const loginSchema = new mongoose.Schema({
     },
     logoCompany: {
         type: String,
-        required: function() {
-            return this.typeAccount === 'colaborator';
-        }
     },
     createdAt: {
         type: Date,
