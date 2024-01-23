@@ -6,6 +6,14 @@ Bem-vindo ao backend do projeto MVP Grão Direto!
 
 Este projeto consiste em desenvolver um API em node com mongodb, estou usando JWT para autenticação de usuário, essa API consiste em cadastro de restaurantes, cliente e produtos
 
+## Dados do Banco
+
+Os dados utilizados no projeto podem ser encontrados [aqui](https://github.com/BrenoEduardo/dados-restaurante-e-user).
+
+## Front-end
+
+O repositório do front end por ser encontrado [aqui](https://github.com/BrenoEduardo/mvp-grao-direto-front). Lá tem outra informações no readme.MD sobre a integração
+
 ## Rodando Localmente
 
 1. Clone o repositório para sua máquina local:
